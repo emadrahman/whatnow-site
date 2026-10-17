@@ -10,11 +10,11 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="updated">What Now for iPhone · Last updated 14 October 2026</p>
+<p class="updated">What Now for iPhone · Last updated 16 October 2026</p>
 
 <div class="box">
   <strong>Summary</strong>
-  <p>What Now reads your calendar on your iPhone to show what's happening now and what's next in a Live Activity. Your calendar is never sent anywhere. The developer runs no servers, and the app has no account, analytics, advertising, or third-party tracking code.</p>
+  <p>What Now reads your calendar on your iPhone to show what's happening now and what's next in a Live Activity. Your calendar is never sent anywhere. The developer runs no servers, and the app has no account, advertising, or third-party tracking code. What Now does send anonymous usage counts to an analytics service, TelemetryDeck. They're on by default, you can turn them off in the app, and they never include your calendar. See section 6.</p>
   <p>What Now never creates, changes, or deletes calendar events.</p>
 </div>
 
@@ -39,7 +39,8 @@
   <li>your appearance choices;</li>
   <li>the words you choose for Hidden Keywords;</li>
   <li>which events you've taken off the Live Activity, by the calendar's internal identifier for each event and when it ends;</li>
-  <li>whether What Now Pro is unlocked, so the Live Activity is right before the App Store has been checked.</li>
+  <li>whether What Now Pro is unlocked, so the Live Activity is right before the App Store has been checked;</li>
+  <li>whether Share Anonymous Usage is on, and, while it is, the counts waiting for the next daily summary (section 6).</li>
 </ul>
 <p>These settings stay in the app's container on your iPhone. They're included in your iPhone's backups according to your iOS backup settings, and they're not synced or sent anywhere by the app.</p>
 
@@ -50,9 +51,18 @@
 <h2>5. Joining calls</h2>
 <p>When you tap Join, What Now opens the call link from your event in the app or website it belongs to, such as Zoom or Google Meet. What Now sends nothing to that service; from then on, that service's own privacy policy applies.</p>
 
-<h2>6. Information not collected</h2>
-<p>The app contains no analytics framework, advertising framework, crash-reporting kit, social login, or third-party library. It makes no network requests of its own; the only network activity is Apple's App Store checking your purchase, described below. No server is operated by the developer in connection with the app.</p>
-<p>The developer therefore does not receive your calendar events, settings, usage of the app, IP address, or any device identifier.</p>
+<h2>6. Anonymous usage counts, and what isn't collected</h2>
+<p>What Now sends anonymous usage counts to <a href="https://telemetrydeck.com">TelemetryDeck</a>, an analytics service, so the developer can see how the app is used: whether the introduction is clear, which settings people choose, and what keeps the Live Activity going. This is on by default. You can turn it off at any time in the app under Settings › About › Share Anonymous Usage. When it's off, the app sends nothing to TelemetryDeck, not even a note that you turned it off, and it discards counts it hadn't yet sent.</p>
+<p>While it's on, the app sends:</p>
+<ul>
+  <li><strong>Events about using the app:</strong> that the app was opened; which introduction page was viewed; whether you allowed calendar access; that you opened the Refresh Automatically guide, opened Shortcuts from it, or opened a Help topic or the What Now Pro screen; that you started a purchase; that a purchase or restore finished and how (completed, pending, cancelled, failed, or whether a purchase was found); that a Join button opened a call; and that you turned sharing back on.</li>
+  <li><strong>A daily summary:</strong> how many times in the past day a Shortcuts automation, a critter tap, or a background refresh ran, and how many Live Activities were started, scheduled, or refused by iOS; and your current settings, such as whether What Now Pro is unlocked, the theme and light or dark choice, how long before your first event the Live Activity appears, which options are on, whether you've hidden any keywords (yes or no, never the words), whether calendar and Live Activity permission are granted, and how many calendars you have and follow, as a range such as "2-3".</li>
+  <li><strong>When you buy What Now Pro:</strong> the product, the price converted to US dollars, the currency, and the country of your App Store storefront.</li>
+  <li><strong>Details the analytics service adds to every signal:</strong> the app version and build, whether the app came from the App Store or TestFlight, your device model, operating system version, screen size and orientation, language and region, time zone, the day and hour the signal was sent, whether your iPhone is in light or dark mode, text size and other accessibility display settings (such as Bold Text, Reduce Motion, and Increase Contrast), how many days and sessions the app has been used and how long sessions last, and the date you first used the app.</li>
+  <li><strong>The first time the app runs:</strong> a signal from the analytics service noting a new installation.</li>
+</ul>
+<p>These signals are tied only to a one-way hash of the identifier iOS gives apps from the same developer on your iPhone. It isn't linked to your name, Apple Account, or contact details, and TelemetryDeck says it anonymizes identifiers so they can't be traced back to a person. They never include your calendar events, event titles, calendar names, keywords, links, locations, or times. TelemetryDeck states that it never stores IP addresses and that its servers are in the European Union, in Germany and the Netherlands. The developer uses the counts only to understand and improve the app, and does not use them for advertising or tracking.</p>
+<p>Apart from this, the app contains no advertising framework, crash-reporting kit, social login, or other third-party library. Its only network activity is the anonymous usage counts above, while they're on, and Apple's App Store checking your purchase, described below. The developer operates no server of their own in connection with the app. The developer does not receive your calendar events or your IP address, and cannot tell who you are from the usage counts.</p>
 
 <h2>7. Background activity</h2>
 <p>To keep the Live Activity current while the app is closed, What Now uses Background App Refresh, and its "Check the Calendar" action runs when you tap the critter on the Lock Screen or use it in Shortcuts. Each of these reads your calendar again on the device, exactly as the app does when it's open. You can turn Background App Refresh off in iOS Settings › Apps › What Now.</p>
@@ -60,6 +70,7 @@
 <h2>8. Purchases</h2>
 <p>What Now Pro is sold through Apple's In-App Purchase system. Apple processes the payment, and your payment details are handled only by Apple; they are never sent to or stored by the developer or the app. Your purchase is checked on your iPhone with Apple's StoreKit framework.</p>
 <p>Apple gives the developer summary sales reports covering units sold, revenue, and country. These reports don't identify individual customers.</p>
+<p>While anonymous usage counts are on, What Now also tells its analytics service when a purchase finishes, with the details listed in section 6. It doesn't send your name, your Apple Account, or your payment details.</p>
 
 <h2>9. Crash reports and diagnostics</h2>
 <p>If you've turned on <em>Share With App Developers</em> in iOS Settings › Privacy &amp; Security › Analytics &amp; Improvements, Apple may give the developer crash logs and performance data about What Now. Apple collects and supplies this, not the app, and Apple states that it isn't associated with your identity. You can turn the setting off at any time.</p>
@@ -72,20 +83,22 @@
 <ul>
   <li>Turn off calendar access in iOS Settings › Privacy &amp; Security › Calendars. What Now stops reading your events right away.</li>
   <li>Turn off Live Activities for What Now in iOS Settings › Apps › What Now.</li>
+  <li>Turn off Share Anonymous Usage in the app under Settings › About. The app stops sending usage counts right away.</li>
   <li>Deleting the app removes its settings from your iPhone and ends its Live Activities.</li>
 </ul>
-<p>Because the developer holds no copy of your information, these steps delete it completely. Your calendar itself is untouched; it belongs to your calendar service.</p>
+<p>Because the developer holds no copy of your calendar information or settings, these steps delete it completely. Your calendar itself is untouched; it belongs to your calendar service. Anonymous usage counts already sent are covered in section 12.</p>
 
 <h2>12. Retention</h2>
 <p>Settings stay on your iPhone until you change them or delete the app. Events you've taken off the Live Activity are cleared out after they're over, the next time you take an event off or put one back. The developer keeps no copy.</p>
+<p>Anonymous usage counts are kept by TelemetryDeck. TelemetryDeck says it has no set schedule for deleting stored events, and that it expects to delete them after 7 to 10 years but doesn't guarantee it. Because the counts can't be tied to you, the developer can't find and delete the counts from one person. Turning off Share Anonymous Usage stops new counts.</p>
 
 <h2>13. Children</h2>
-<p>What Now is not directed at children under 13. The app doesn't send information to the developer, and information from children is not knowingly collected.</p>
+<p>What Now is not directed at children under 13. The app sends only the anonymous usage counts described in section 6, which don't identify anyone, and information from children is not knowingly collected.</p>
 
 <h2>14. Your rights</h2>
-<p><strong>Canada.</strong> Under the Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to access personal information an organization holds about you, to ask for it to be corrected, and to complain to the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>. The only personal information the developer holds is support email you choose to send.</p>
-<p><strong>United Kingdom and European Economic Area.</strong> If you're in the UK or the EEA, the UK GDPR and the GDPR give you rights of access, rectification, erasure, restriction of processing, objection, and data portability, and the right to complain to your national supervisory authority. Since the app processes information only on your iPhone, you exercise these rights directly through the app and iOS.</p>
-<p><strong>California.</strong> If you're a California resident, the CCPA and CPRA give you the right to know what personal information is collected, to ask for it to be deleted or corrected, and not to be discriminated against for using those rights. The developer does not collect, sell, or share personal information as that legislation defines those terms.</p>
+<p><strong>Canada.</strong> Under the Personal Information Protection and Electronic Documents Act (PIPEDA), you have the right to access personal information an organization holds about you, to ask for it to be corrected, and to complain to the <a href="https://www.priv.gc.ca/">Office of the Privacy Commissioner of Canada</a>. The only personal information the developer holds is support email you choose to send; the anonymous usage counts in section 6 can't be tied to you.</p>
+<p><strong>United Kingdom and European Economic Area.</strong> If you're in the UK or the EEA, the UK GDPR and the GDPR give you rights of access, rectification, erasure, restriction of processing, objection, and data portability, and the right to complain to your national supervisory authority. Since the app processes your calendar and settings only on your iPhone, you exercise these rights directly through the app and iOS, including by turning off usage counts (section 6).</p>
+<p><strong>California.</strong> If you're a California resident, the CCPA and CPRA give you the right to know what personal information is collected, to ask for it to be deleted or corrected, and not to be discriminated against for using those rights. The developer does not sell or share personal information as that legislation defines those terms. The anonymous usage counts are described in section 6.</p>
 <p>To exercise any of these rights for support correspondence, email <a href="mailto:developer.emadrahman@gmail.com">developer.emadrahman@gmail.com</a>.</p>
 
 <h2>15. Changes to this policy</h2>
