@@ -10,7 +10,7 @@
 <main>
 
 <h1>Privacy Policy</h1>
-<p class="updated">What Now for iPhone · Last updated 30 October 2026</p>
+<p class="updated">What Now for iPhone · Last updated 17 November 2026</p>
 
 <div class="box">
   <strong>Summary</strong>
@@ -24,14 +24,14 @@
 
 <h2>2. Calendar information the app reads</h2>
 <p>With your permission, What Now reads the events in the calendars synced to your iPhone through Apple's EventKit framework. iOS asks for Full Access because the app needs to read existing events; it only reads them.</p>
-<p>So you can choose which calendars to follow, it reads the list of your calendars, with each one's name, color, and the account it belongs to (such as iCloud or a Google address), and which calendar new events go on by default, to suggest one. For each timed event in the calendars you follow, it uses:</p>
+<p>So you can choose which calendars to follow, it reads the list of your calendars, with each one's name, color, and the account it belongs to (such as iCloud or a Google address), and which calendar new events go on by default, to suggest one. For each event in the calendars you follow, it uses:</p>
 <ul>
   <li>the title, start and end times, and the calendar it belongs to, including that calendar's name and color;</li>
   <li>your response to the invitation (accepted, maybe, or not yet answered), so events you've declined stay off your Live Activity;</li>
   <li>the location, to show where the event is;</li>
   <li>the event's URL, location, and notes, which are checked on the device for a video-call link (such as Zoom, Google Meet, or Microsoft Teams) so you can join from the Lock Screen. Notes are not displayed or stored.</li>
 </ul>
-<p>All-day events are ignored. Calendar information is processed only on your iPhone and is never transmitted to the developer or anyone else.</p>
+<p>All-day events can appear in the app's agenda but never on the Live Activity. Calendar information is processed only on your iPhone and is never transmitted to the developer or anyone else.</p>
 
 <h2>3. Information the app stores</h2>
 <p>What Now stores only its settings and a few records that go with them, on your iPhone:</p>
@@ -39,7 +39,7 @@
   <li>which calendars to follow, when the Live Activity starts, and what it shows;</li>
   <li>your appearance choices;</li>
   <li>the words you choose for Hidden Keywords;</li>
-  <li>which events you've taken off the Live Activity, by the calendar's internal identifier for each event and when it ends;</li>
+  <li>which events you've taken off the Live Activity, or put on it from a calendar set to App Only, by the calendar's internal identifier for each event and when it ends;</li>
   <li>whether What Now Pro is unlocked, so the Live Activity is right before the App Store has been checked;</li>
   <li>the purchase service's own records, kept by its code inside the app: the random ID it creates for this app and its last answer about your purchase (section 8);</li>
   <li>whether Share Anonymous Usage is on, and, while it is, the counts waiting for the next daily summary (section 6);</li>
@@ -59,7 +59,7 @@
 <p>What Now sends anonymous usage counts to <a href="https://telemetrydeck.com">TelemetryDeck</a>, an analytics service, so the developer can see how the app is used: whether the introduction is clear, which settings people choose, and what keeps the Live Activity going. This is on by default. You can turn it off at any time in the app under Settings › About › Share Anonymous Usage. When it's off, the app records and sends nothing new to TelemetryDeck, not even a note that you turned it off, and it discards the counts waiting for the next daily summary.</p>
 <p>While it's on, the app sends:</p>
 <ul>
-  <li><strong>Events about using the app:</strong> that the app was opened; which introduction page was viewed; whether you allowed calendar access; that you opened the Refresh Automatically guide, opened Shortcuts from it, or opened a Help topic or the What Now Pro screen; that you started a purchase; that a purchase or restore finished and how (completed, pending, cancelled, failed, or whether a purchase was found); that a Join button on the Live Activity opened a call; and that you turned sharing back on.</li>
+  <li><strong>Events about using the app:</strong> that the app was opened; which introduction page was viewed; whether you allowed calendar access; that you opened the Refresh Automatically guide, opened Shortcuts or the ready-made shortcut from it, or opened a Help topic or the What Now Pro screen; that you started a purchase; that a purchase or restore finished and how (completed, pending, cancelled, failed, or whether a purchase was found); that a purchase finished but Pro didn't unlock, or that the app's checks of your purchase disagree (RevenueCat, the App Store, and the app's own record, each as a yes or no), so the developer can find and fix purchase problems; that a Join button on the Live Activity opened a call; and that you turned sharing back on.</li>
   <li><strong>A daily summary:</strong> how many times in the past day a Shortcuts automation, a critter tap, or a background refresh ran, and how many Live Activities were started, scheduled, or refused by iOS; and your current settings, such as whether What Now Pro is unlocked, the theme and light or dark choice, how long before your first event the Live Activity appears, which options are on, whether you've hidden any keywords (yes or no, never the words), whether calendar and Live Activity permission are granted, and how many calendars you have and follow, as a range such as "2-3".</li>
   <li><strong>When you buy What Now Pro:</strong> the product, the price converted to US dollars, the currency, and the country of your App Store storefront.</li>
   <li><strong>Details the analytics service adds to every signal:</strong> the app version and build, whether the app came from the App Store or TestFlight, your device model, operating system version, screen size and orientation, language and region, time zone, the day and hour the signal was sent, whether your iPhone is in light or dark mode, text size and other accessibility display settings (such as Bold Text, Reduce Motion, and Increase Contrast), how many days and sessions the app has been used and how long sessions last, and the date you first used the app.</li>
@@ -89,7 +89,7 @@
 <p>If you've turned on <em>Share With App Developers</em> in iOS Settings › Privacy &amp; Security › Analytics &amp; Improvements, Apple may give the developer crash logs and performance data about What Now. Apple collects and supplies this, not the app, and Apple states that it isn't associated with your identity. You can turn the setting off at any time.</p>
 
 <h2>10. Support correspondence</h2>
-<p>If you email support, the developer receives your email address, your message, and, if you used Contact Support in the app, the app version and build, device model, and iOS version filled in for you. You can see and edit that text before sending.</p>
+<p>If you email support, the developer receives your email address, your message, and, if you used Contact Support in the app, the app version and build, device model, and iOS version filled in for you, along with whether What Now Pro is unlocked, what each purchase check found (section 8), and the purchase service's random ID for this app, so the developer can look up a purchase problem. You can see and edit that text before sending.</p>
 <p>This correspondence is used only to answer you and is kept in the developer's email account. It is never added to a mailing list.</p>
 
 <h2>11. Managing and deleting your information</h2>
@@ -103,7 +103,7 @@
 <p>Because the developer holds no copy of your calendar information or settings, these steps delete it completely. Your calendar itself is untouched; it belongs to your calendar service. Anonymous usage counts and purchase records already sent are covered in section 12.</p>
 
 <h2>12. Retention</h2>
-<p>Settings stay on your iPhone until you change them or delete the app. Events you've taken off the Live Activity are cleared out after they're over, the next time you take an event off or put one back. The developer keeps no copy.</p>
+<p>Settings stay on your iPhone until you change them or delete the app. Events you've taken off the Live Activity or put on it are cleared out after they're over, the next time you take an event off or put one on. The developer keeps no copy.</p>
 <p>Anonymous usage counts are kept by TelemetryDeck. TelemetryDeck says it has no set schedule for deleting stored events, and that it expects to delete them after 7 to 10 years but doesn't guarantee it. Because the counts can't be tied to you, the developer can't find and delete the counts from one person. Turning off Share Anonymous Usage stops new counts.</p>
 <p>Purchase records are kept by RevenueCat for as long as the developer uses the service, so Pro can be restored, unless you ask for yours to be deleted (section 11).</p>
 
